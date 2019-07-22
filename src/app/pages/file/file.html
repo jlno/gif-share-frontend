@@ -1,0 +1,31 @@
+<div class="container" ng-init="vm.onInit()">
+  <div ng-if="vm.imageUrl && !vm.isPrivate && !vm.isExpired">
+    <img class="img-view" ng-src="{{ vm.imageUrl }}" alt="" />
+  </div>
+  <div ng-if="vm.isExpired">
+    <div class="alert alert-warning" role="alert">
+      Esta imagem expirou.
+    </div>
+  </div>
+  <form ng-if="vm.isPrivate" ng-submit="vm.loadPrivateImage()" novalidate>
+    <h4 class="mb-4 text-center">
+      Imagem privada
+      <small class="text-muted">Informe a senha para visualizar</small>
+    </h4>
+    <div class="form-group row m-2">
+      <input
+        id="form-file-password"
+        placeholder="Senha"
+        type="password"
+        class="form-control"
+        ng-model="vm.imagePassword"
+        maxlength="50"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary m-2">
+      Visualizar imagem
+    </button>
+  </form>
+</div>

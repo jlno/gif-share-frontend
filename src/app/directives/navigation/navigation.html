@@ -1,0 +1,16 @@
+<nav class="nav nav-masthead justify-content-center" ng-init="vm.onInit()">
+  <a
+    class="nav-link"
+    ng-class="{'active':vm.onHome}"
+    ng-click="vm.goToHome()"
+    href="#/home"
+    >Início</a
+  >
+  <a
+    class="nav-link"
+    ng-class="{'active':vm.onLatest}"
+    ng-click="vm.goToLatest()"
+    href="#/latest"
+    >Últimas Imagens</a
+  >
+</nav>

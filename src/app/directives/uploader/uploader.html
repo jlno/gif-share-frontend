@@ -1,0 +1,55 @@
+<div class="input-group" ng-init="vm.onInit()">
+  <div class="file-upload">
+    <button
+      class="file-upload-btn"
+      type="button"
+      ng-click="vm.openDialog()"
+      ng-disabled="ngDisabled"
+    >
+      Adicionar GIF / MP4
+    </button>
+
+    <div class="image-upload-wrap" ng-hide="vm.file">
+      <input
+        class="file-upload-input"
+        type="file"
+        accept="image/gif,video/mp4"
+        onchange="angular.element(this).scope().vm.readURL(this)"
+      />
+
+      <div class="drag-text">
+        <h3>Arraste e solte um arquivo aqui ou selecione</h3>
+      </div>
+    </div>
+
+    <div class="file-upload-content" ng-show="vm.file">
+      <div ng-show="vm.file.isImage">
+        <img
+          class="file-upload-image"
+          alt=""
+          id="image"
+          ng-src="{{ vm.file.url }}"
+        />
+      </div>
+
+      <div ng-show="vm.file.isVideo">
+        <video
+          muted
+          class="file-upload-video"
+          id="video"
+          ng-init="vm.watchVideo()"
+          ng-src="{{ vm.file.url }}"
+        ></video>
+
+        <div ng-class="{'disable-events': ngDisabled}">
+          <rzslider
+            rz-slider-model="vm.slider.minValue"
+            rz-slider-high="vm.slider.maxValue"
+            rz-slider-options="vm.slider.options"
+            ng-disabled="ngDisabled"
+          ></rzslider>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

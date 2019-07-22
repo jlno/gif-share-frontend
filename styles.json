@@ -1,0 +1,9 @@
+[
+  "./node_modules/bootstrap/dist/css/bootstrap.css",
+  "./node_modules/bootstrap-toggle/css/bootstrap-toggle.css",
+  "./node_modules/font-awesome/css/font-awesome.css",
+  "./node_modules/angularjs-slider/dist/rzslider.min.css",
+  "./node_modules/angular-moment-picker/dist/angular-moment-picker.min.css",
+  "./node_modules/angularjs-toaster/toaster.min.css",
+  "./src/**/*.css"
+]

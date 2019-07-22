@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>GIF Share</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div
+      class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center"
+    >
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">GIF Share</h3>
+          <navigation></navigation>
+        </div>
+      </header>
+      <main role="main" class="inner cover">
+        <toaster-container></toaster-container>
+        <ng-view> </ng-view>
+      </main>
+      <footer class="mastfoot mt-4">
+        <div class="inner">
+          <p>
+            Compartilhamento de imagens desenvolvido por
+            <a href="https://github.com/jlno">@jlno</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./assets/js/scripts.js"></script>
+</html>

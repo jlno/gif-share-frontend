@@ -1,0 +1,11 @@
+[
+  "./node_modules/angular/angular.min.js",
+  "./node_modules/angular-route/angular-route.js",
+  "./node_modules/jquery/dist/jquery.min.js",
+  "./node_modules/bootstrap-toggle/js/bootstrap-toggle.js",
+  "./node_modules/angularjs-slider/dist/rzslider.min.js",
+  "./node_modules/moment/min/moment-with-locales.min.js",
+  "./node_modules/angular-moment-picker/dist/angular-moment-picker.min.js",
+  "./node_modules/angularjs-toaster/toaster.min.js",
+  "./src/**/*.js"
+]
