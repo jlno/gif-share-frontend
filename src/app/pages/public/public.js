@@ -2,14 +2,14 @@
   'use strict';
   angular
     .module('app')
-    .controller('LatestCtrl', [
+    .controller('PublicCtrl', [
       '$http',
       'toaster',
       'API_IMAGE_URL',
-      LatestCtrl
+      PublicCtrl
     ]);
 
-  function LatestCtrl($http, toaster, API_IMAGE_URL) {
+  function PublicCtrl($http, toaster, API_IMAGE_URL) {
     var vm = this;
 
     vm.dataSource = [];
@@ -18,17 +18,11 @@
       $http
         .get(API_IMAGE_URL)
         .then(function(response) {
-          createColumns(response.data);
+          vm.dataSource = response.data;
         })
         .catch(function() {
           toaster.pop('error', 'Erro', 'Falha ao carregar imagens.');
         });
     };
-
-    function createColumns(data) {
-      while (data.length > 0) {
-        vm.dataSource.push(data.splice(0, 1));
-      }
-    }
   }
 })();

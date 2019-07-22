@@ -18,9 +18,9 @@
           controller: 'FileCtrl',
           controllerAs: 'vm'
         })
-        .when('/latest', {
-          templateUrl: 'app/pages/latest/latest.html',
-          controller: 'LatestCtrl',
+        .when('/public', {
+          templateUrl: 'app/pages/public/public.html',
+          controller: 'PublicCtrl',
           controllerAs: 'vm'
         })
         .otherwise({ redirectTo: '/home' });

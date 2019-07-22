@@ -19,20 +19,20 @@
     vm.onInit = function() {
       switch ($location.path()) {
         case '/home':
-          vm.goToHome();
+          vm.activateHomeLink();
           break;
-        case '/latest':
-          vm.goToLatest();
+        case '/public':
+          vm.activatePublicLink();
           break;
       }
     };
 
-    vm.goToHome = function() {
+    vm.activateHomeLink = function() {
       vm.onHome = true;
       vm.onLatest = false;
     };
 
-    vm.goToLatest = function() {
+    vm.activatePublicLink = function() {
       vm.onHome = false;
       vm.onLatest = true;
     };

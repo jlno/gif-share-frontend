@@ -2,15 +2,15 @@
   <a
     class="nav-link"
     ng-class="{'active':vm.onHome}"
-    ng-click="vm.goToHome()"
+    ng-click="vm.activateHomeLink()"
     href="#/home"
     >Início</a
   >
   <a
     class="nav-link"
-    ng-class="{'active':vm.onLatest}"
-    ng-click="vm.goToLatest()"
-    href="#/latest"
+    ng-class="{'active':vm.onPublic}"
+    ng-click="vm.activatePublicLink()"
+    href="#/public"
     >Últimas Imagens</a
   >
 </nav>
