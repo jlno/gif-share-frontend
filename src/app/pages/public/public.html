@@ -3,6 +3,6 @@
     <small class="text-muted">Lista de imagens públicas</small>
   </h4>
   <a ng-href="#/file/{{ image.fileName }}" ng-repeat="image in vm.dataSource">
-    <img class="mb-4" ng-src="{{ image.url }}" alt="" />
+    <img class="public-image mb-4" ng-src="{{ image.url }}" alt="" />
   </a>
 </div>
