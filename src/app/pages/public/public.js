@@ -16,7 +16,7 @@
 
     vm.onInit = function() {
       $http
-        .get(API_IMAGE_URL)
+        .get(API_IMAGE_URL + '/public')
         .then(function(response) {
           vm.dataSource = response.data;
         })

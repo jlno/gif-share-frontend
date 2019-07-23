@@ -22,7 +22,7 @@
     vm.onInit = function() {
       if ($routeParams.filename) {
         $http
-          .get(API_IMAGE_URL + $routeParams.filename)
+          .get(API_IMAGE_URL + '/' + $routeParams.filename)
           .then(function(response) {
             var currentDate = new Date();
             var expirationAt = new Date(response.data.expirationAt);
