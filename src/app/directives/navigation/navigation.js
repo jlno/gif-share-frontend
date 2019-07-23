@@ -29,12 +29,12 @@
 
     vm.activateHomeLink = function() {
       vm.onHome = true;
-      vm.onLatest = false;
+      vm.onPublic = false;
     };
 
     vm.activatePublicLink = function() {
       vm.onHome = false;
-      vm.onLatest = true;
+      vm.onPublic = true;
     };
   }
 })();
