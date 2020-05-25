@@ -1,7 +1,10 @@
 # gif-share-frontend
 Aplicação web para o compartilhamento de GIFs.
 
-![](https://i.imgur.com/MjuYi2h.gif)
+<img src="https://i.imgur.com/ymcBj9s.png" />
+
+## Demo
+https://imgur.com/KOezvsV
 
 ## Iniciar
 * `npm install`
