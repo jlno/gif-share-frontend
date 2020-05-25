@@ -1,8 +1,7 @@
 # gif-share-frontend
 Aplicação web para o compartilhamento de GIFs.
 
-## Dependências globais
-* `npm install -g gulp`
+<img src="https://i.imgur.com/MjuYi2h.gif" />
 
 ## Iniciar
 * `npm install`
